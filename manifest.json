@@ -1,0 +1,23 @@
+{
+  "name": "easy-tool",
+  "version": "0.0.0.1",
+  "manifest_version": 3,
+  "description": "本地开发工具",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "js": ["jquery-3.6.4.js", "inject.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "permissions": ["tabs", "cookies", "storage"],
+  "host_permissions": ["http://*/*", "https://*/*"]
+}
