@@ -14,10 +14,10 @@
   },
   "content_scripts": [
     {
-      "js": ["jquery-3.6.4.js", "inject.js"],
+      "js": ["js/jquery-3.6.4.js", "js/inject.js"],
       "matches": ["<all_urls>"]
     }
   ],
-  "permissions": ["tabs", "cookies", "storage"],
+  "permissions": ["tabs"],
   "host_permissions": ["http://*/*", "https://*/*"]
 }
