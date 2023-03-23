@@ -11,10 +11,10 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
     case 'csdn':
       $('#article_content').css('height', 'auto');
       $('.hide-article-box').hide();
+      $('code').css('user-select', 'text');
       sendResponse({
         msg: 'set',
       });
-
       break;
     default:
       break;

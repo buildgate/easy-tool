@@ -26,4 +26,14 @@ $(document).ready(function () {
       );
     });
   });
+
+  $('#lang').on('click', () => {
+    chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+      console.log(chrome.declarativeNetRequest);
+      chrome.declarativeNetRequest.updateEnabledRulesets(
+        { enableRulesetIds: ['1'] },
+        function () {}
+      );
+    });
+  });
 });

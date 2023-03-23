@@ -53,6 +53,7 @@
             transition: all 0.2s;
             color: #303133;
             user-select: none;
+            margin-bottom: 10px;
         }
 
         #csdn:active {
@@ -64,6 +65,36 @@
             border: #FFFFFF 1px solid;
             color: #FFFFFF;
         }
+
+        #lang {
+            width: 100px;
+            height: 30px;
+            background: #67C23A;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            font-weight: bold;
+            box-sizing: border-box;
+            border-radius: 5px;
+            font-weight: bolder;
+            cursor: pointer;
+            box-shadow: #606266 2px 2px 2px 1px;
+            border: #81be62 1px solid;
+            transition: all 0.2s;
+            color: #303133;
+            user-select: none;
+        }
+
+        #lang:active {
+            box-shadow: none;
+            transform: translate(2px, 2px);
+        }
+
+        #lang:hover {
+            border: #FFFFFF 1px solid;
+            color: #FFFFFF;
+        }
     </style>
 </head>
 
@@ -71,6 +102,7 @@
     <div>
         <div id="clearToken">清除token</div>
         <div id="csdn">CSDN</div>
+        <div id="lang">动态改接口语言</div>
     </div>
 </body>
 <script src="js/jquery-3.6.4.js"></script>
